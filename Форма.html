@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ожерельєва</title>
+</head>
+
+<body>
+	<link rel="stylesheet" href="1.css">
+	<style type="text/css">
+		p{
+			font-weight: bold;
+            font-size: 12pt;
+		}
+
+		fieldset{
+			border:2px solid blue; 
+		}
+		
+	</style>
+</head>
+<body>
+<form name="form">
+<p>Введіть свої дані: </p>
+<fieldset> <p>Обов'язкове поле</p>
+<p>Ім'я: <input name="user" required></p>
+<p>Прізвище: <input name="name" required></p>
+<p>Вік: <input type="age" name="age" required></p>
+<p>E-mail: <input type="email" name="email" required></p>
+</fieldset>	<br>
+
+<fieldset><p>Необов'язкове поле</p>
+	<p>Місце проживання: <input type="home" name="home"></p>
+	   Жінка <input type="radio" name="sex" value="male" checked>
+	   Чоловік <input type="radio" name="sex" value="female">
+	   <br><br>
+	   Дата народження: <input type="date" id="date" name="date"/>
+  </fieldset>
+   <button>Надіслати</button>
+
+
+	
+</body>
+</html>
