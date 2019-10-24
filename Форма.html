@@ -3,9 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ожерельєва</title>
-</head>
+	<script type="text/javascript"></script>
+	<script>
+function hello() {
+x=document.form.user.value;
+y=document.form.date.value;
+alert("Hello "+x+". \nToday is "+y)
+}
+</script>
 
-<body>
 	<link rel="stylesheet" href="1.css">
 	<style type="text/css">
 		p{
@@ -27,16 +33,18 @@
 <p>Прізвище: <input name="name" required></p>
 <p>Вік: <input type="age" name="age" required></p>
 <p>E-mail: <input type="email" name="email" required></p>
+<p>Пароль: <input type="password" name="password" required></p>
 </fieldset>	<br>
 
 <fieldset><p>Необов'язкове поле</p>
 	<p>Місце проживання: <input type="home" name="home"></p>
+	  <p>Стать</p>
 	   Жінка <input type="radio" name="sex" value="male" checked>
 	   Чоловік <input type="radio" name="sex" value="female">
-	   <br><br>
-	   Дата народження: <input type="date" id="date" name="date"/>
+	  <p>Дата народження: <input type="date" id="date" name="date"/></p>
   </fieldset>
-   <button>Надіслати</button>
+   <input type="button" value="Привітатися" onclick="hello()">
+
 
 
 	
